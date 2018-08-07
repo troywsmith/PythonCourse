@@ -1,6 +1,4 @@
-# Python for Everybody Specialization
-## Course 1: Programming for Everybody (Getting Started with Python)
-## University of Michigan
+## Programming for Everybody (Getting Started with Python)
 
 ### Generic Computer
 
