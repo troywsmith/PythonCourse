@@ -1,13 +1,24 @@
-#Hardware
+# Python for Everybody Specialization
+## Course 1: Programming for Everybody (Getting Started with Python)
+## University of Michigan
 
-Generic Computer
+### Generic Computer
 
-Input/output devices
-- ex: Mouse, keyboard, screen
+Central Processing Unit (CPU)
+- runs the programs 
 
-Software
-- CPU: highly sophisticated circuit with transistors
-- Main Memory
+Input Devices 
+- keyboard, mouse, touch screen
+
+Output devices
+- screen, speakers, printer, DVD burner
+
+Main Memory (RAM)
+- fast, small temporary storage, lost on reboot
 
 Secondary Memory
-- Where the python memory is created
+- slower large permanent storage, lasts until deleted
+
+### Python History
+
+Author: Guido van Rossum
