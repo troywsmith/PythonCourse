@@ -47,8 +47,6 @@ syntax errors: violation of python grammar rules
 logic errors: violation of order of the statements/how they relate to each other
 semantic errors: mistake in the program
 
-#### Glossary
-
 bug: An error in a program.
 
 central processing unit: The heart of any computer. It is what runs the software
@@ -122,13 +120,69 @@ start by check the line that python points to for grammar mistakes
 
 ### Chapter 2: Variables, expressions, and statements
 
-Reserved words: you cannot use these words as variables
+assignment: A statement that assigns a value to a variable.
 
-Variable: a names place in memory where a programmer can store data and later retrieve the data using the variable name
+concatenate: To join two operands end to end.
 
-Variable name rules: 
-- must start with a letter or underscore 
-- must consists of letters, numbers, and underscores
-- case sensitive
+comment: Information in a program that is meant for other programmers (or anyone reading the source code) and has no effect on the execution of the program.
 
-Order of operations: PEMDAS then Left to Right
+evaluate: To simplify an expression by performing the operations in order to yield a single value.
+
+expression: A combination of variables, operators, and values that represents a single result value.
+
+floating point: A type that represents numbers with fractional parts.
+
+integer: A type that represents whole numbers.
+
+keyword: A reserved word that is used by the compiler to parse a program; you cannot use keywords like if, def, and while as variable names.
+
+mnemonic: A memory aid. We often give variables mnemonic names to help us
+remember what is stored in the variable.
+
+modulus operator: An operator, denoted with a percent sign (%), that works on integers and yields the remainder when one number is divided by another.
+
+operand: One of the values on which an operator operates.
+
+operator: A special symbol that represents a simple computation like addition, multiplication, or string concatenation.
+
+rules of precedence: The set of rules governing the order in which expressions involving multiple operators and operands are evaluated.
+
+statement: A section of code that represents a command or action. So far, the statements we have seen are assignments and print expression statement.
+
+string A: type that represents sequences of characters.
+
+type A: category of values. The types we have seen so far are integers (type int), floating-point numbers (type float), and strings (type str).
+
+value: One of the basic units of data, like a number or string, that a program manipulates.
+
+variable: A name that refers to a value
+
+### Chapter 3: Conditional Execution
+
+body: The sequence of statements within a compound statement.
+
+boolean expression: An expression whose value is either True or False.
+
+branch: One of the alternative sequences of statements in a conditional statement.
+
+chained conditional: A conditional statement with a series of alternative branches.
+
+comparison operator: One of the operators that compares its operands: ==, !=, >, <, >=, and <=.
+
+conditional statement: A statement that controls the flow of execution depending on some condition.
+
+condition: The boolean expression in a conditional statement that determines which branch is executed.
+
+compound statement A statement that consists of a header and a body. The header ends with a colon (:). The body is indented relative to the header.
+
+guardian pattern: Where we construct a logical expression with additional comparisons to take advantage of the short-circuit behavior.
+
+logical operator: One of the operators that combines boolean expressions: and, or, and not.
+
+nested conditional: A conditional statement that appears in one of the branches of another conditional statement.
+
+traceback: A list of the functions that are executing, printed when an exception occurs.
+
+short circuit: When Python is part-way through evaluating a logical expression and stops the evaluation because Python knows the final value for the expression without needing to evaluate the rest of the expression.
+
+### Chapter 4: Functions
