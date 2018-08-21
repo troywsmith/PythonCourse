@@ -119,3 +119,16 @@ Exercise 8: Explain each of the following using an example of a human capability
 
 Exercise 9: How do you fix a “Syntax Error”?
 start by check the line that python points to for grammar mistakes
+
+### Chapter 2: Variables, expressions, and statements
+
+Reserved words: you cannot use these words as variables
+
+Variable: a names place in memory where a programmer can store data and later retrieve the data using the variable name
+
+Variable name rules: 
+- must start with a letter or underscore 
+- must consists of letters, numbers, and underscores
+- case sensitive
+
+Order of operations: PEMDAS then Left to Right
