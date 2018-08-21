@@ -46,5 +46,20 @@
 # host = data[atPos+1 : sppos]
 # print(host)
 
-x = 'From marquard@uct.ac.za'
-print(x[14:17])
+# x = 'From marquard@uct.ac.za'
+# print(x[14:17])
+
+fname = input('Enter a file name: ')
+
+try:
+  fhand = open(fname)
+except:
+  print('Cannot open file', fname)
+  quit()
+
+count = 0
+for line in fhand:
+  if line.startswith('Subject:'):
+    count += 1
+
+print('There were', count, 'subject lines in', fname)
