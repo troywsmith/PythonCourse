@@ -16,13 +16,29 @@
 
 # print('Done', istr)
 
-rawstr = input('Enter a number: ')
-try:
-  ival = int(rawstr)
-except:
-  ival = -1
+# rawstr = input('Enter a number: ')
+# try:
+#   ival = int(rawstr)
+# except:
+#   ival = -1
 
-if ival > 0:
-  print('Number: ', ival)
-else:
-  print('Not a number')
+# if ival > 0:
+#   print('Number: ', ival)
+# else:
+#   print('Not a number')
+
+def thing(str):
+  print(str)
+thing('Hello World')
+
+big = max('hello world')
+print(big)
+
+def greet():
+  return "Hello"
+print(greet())
+
+def addTwo(a, b):
+  return a + b
+
+print(addTwo(2, 3))

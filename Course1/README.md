@@ -1,51 +1,6 @@
 # Programming for Everybody (Getting Started with Python)
 
-### Generic Computer
-Central Processing Unit (CPU): runs the programs 
-Input Devices: keyboard, mouse, touch screen
-Output devices: screen, speakers, printer, DVD burner
-Main Memory (RAM): fast, small temporary storage, lost on reboot
-Secondary Memory: slower large permanent storage, lasts until deleted
-Network Connection: very slow place to store/retrieve data
-
-### Python 
-Author: Guido van Rossum
-Overview: High-level language intended to be relatively straightforward for humans to read/write and for computer to read/process
-
-### Chapter 1: Why we program
-Reserved words: cannot use as variable names/identifiers
-False,	class,	finally,	is,	return, None,	continue,	for, lambda,	try, True,	def,	from,	nonlocal,	while, and,	del,	global,	not,	with, as,	elif,	if,	or,	yield, assert,	else, import,	pass, break,	except,	in,	raise
-
-Interactive vs Script:
-interactive - you type directly to python one line at a time and it responds
-script - you enter a sequence of statements (lines) into a file using a text editor and tell python to execute the statements in the file
-
-CONVERSING WITH PYTHON:
- python3 [filename] : runs python on a file
- quit() : exits out of python in interactive mode
-
-Machine language: the language the computer understands that is represented all in zeros and ones. Not portable across different types of hardware.
-
-Programming Language Translators
-Interpreter: reads the source code of the program, parses it, and interprets the instructions on the fly. Python is an interpreter.
-Compiler: Needs to be handed the whole program in a file and then run it as a process to translate the high-level source code into machine language and then the compiler puts the resulting machine language into a file for later execution
-
-Variable: the labels we use to refer to this stored data
-
-input: get data from the outside world. ex: reading data from a file or some kind of sensor like a microphone/GPA
-
-output: display the results of the program on a screen or store them in a file or even write them to a device like a speaker 
-
-sequential execution: perform statements one after another 
-
-repeated execution: perform some set of statements repeatesly
-
-reuse: write a set of instructions once and give them a name and then reuse those instructions as needed
-
-Type of Errors:
-syntax errors: violation of python grammar rules
-logic errors: violation of order of the statements/how they relate to each other
-semantic errors: mistake in the program
+### Chapter 1: Why we program 
 
 bug: An error in a program.
 
@@ -56,6 +11,8 @@ compile: To translate a program written in a high-level language into a low-leve
 
 high-level language: A programming language like Python that is designed to be easy for humans to read and write.
 
+input: get data from the outside world. ex: reading data from a file or some kind of sensor like a microphone/GPA
+
 interactive mode: A way of using the Python interpreter by typing commands and expressions at the prompt.
 
 interpret: To execute a program in a high-level language by translating it one line at a time.
@@ -65,6 +22,8 @@ low-level language: A programming language that is designed to be easy for a com
 machine code: The lowest-level language for software, which is the language that is directly executed by the central processing unit (CPU).
 
 main memory: Stores programs and data. Main memory loses its information when the power is turned off.
+
+output: display the results of the program on a screen or store them in a file or even write them to a device like a speaker
 
 parse: To examine a program and analyze the syntactic structure.
 
@@ -77,46 +36,19 @@ problem solving: The process of formulating a problem, finding a solution, and e
 program: A set of instructions that specifies a computation.
 prompt When a program displays a message and pauses for the user to type some input to the program.
 
+repeated execution: perform some set of statements repeatesly
+
+reuse: write a set of instructions once and give them a name and then reuse those instructions as needed
+
 secondary memory: Stores programs and data and retains its information even when the power is turned off. Generally slower than main memory. Examples of secondary memory include disk drives and flash memory in USB sticks.
 
 semantics: The meaning of a program.
 
 semantic error: An error in a program that makes it do something other than what the programmer intended.
 
+sequential execution: perform statements one after another 
+
 source code: A program in a high-level language.
-
-#### Exercises
-Exercise 1: What is the function of the secondary memory in a computer?
-c) Store information for the long term, even beyond a power cycle
-
-Exercise 2: What is a program?
-A list of instructions 
-
-Exercise 3: What is the difference between a compiler and an interpreter?
-compiler translates a program written in a high-level language into a low-level language all at once, in preparation for later execution.
-interpreter executes a program in a high-level language by translating it one line at a time.
-
-Exercise 4: Which of the following contains “machine code”?
-a) The Python interpreter
-
-Exercise 5: What is wrong with the following code:
-the print is spelled wrong and there is no () for the print function
-
-Exercise 6: Where in the computer is a variable such as “x” stored after the following Python line finishes?
-b) Main Memory
-
-Exercise 7: What will the following program print out:
-b) 44
-
-Exercise 8: Explain each of the following using an example of a human capability: 
-(1) Central processing unit: brain 
-(2) Main Memory: brain
-(3) Secondary Memory: brain
-(4) Input Device: eyes
-(5) Output Device: mouth
-
-Exercise 9: How do you fix a “Syntax Error”?
-start by check the line that python points to for grammar mistakes
 
 ### Chapter 2: Variables, expressions, and statements
 
@@ -186,3 +118,48 @@ traceback: A list of the functions that are executing, printed when an exception
 short circuit: When Python is part-way through evaluating a logical expression and stops the evaluation because Python knows the final value for the expression without needing to evaluate the rest of the expression.
 
 ### Chapter 4: Functions
+
+algorithm: A general process for solving a category of problems.
+
+argument: A value provided to a function when the function is called. This value
+is assigned to the corresponding parameter in the function.
+
+body: The sequence of statements inside a function definition.
+
+composition: Using an expression as part of a larger expression, or a statement
+as part of a larger statement.
+
+deterministic: Pertaining to a program that does the same thing each time it
+runs, given the same inputs.
+
+dot notation: The syntax for calling a function in another module by specifying
+the module name followed by a dot (period) and the function name.
+
+flow of execution: The order in which statements are executed during a program
+run.
+
+fruitful function: A function that returns a value.
+
+function: A named sequence of statements that performs some useful operation. Functions may or may not take arguments and may or may not produce a result.
+
+function: call A statement that executes a function. It consists of the function
+name followed by an argument list.
+
+function definition: A statement that creates a new function specifying its name, parameters, and the statements it executes.
+
+function: object A value created by a function definition. The name of the function is a variable that refers to a function object.
+
+header: The first line of a function definition.
+
+import statement: A statement that reads a module file and creates a module
+object.
+
+module object: A value created by an import statement that provides access to the data and code defined in a module.
+
+parameter: A name used inside a function to refer to the value passed as an argument.
+
+pseudorandom: Pertaining to a sequence of numbers that appear to be random, but are generated by a deterministic program.
+
+return value: The result of a function. If a function call is used as an expression, the return value is the value of the expression.
+
+void function: A function that does not return a value.
