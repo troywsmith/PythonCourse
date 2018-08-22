@@ -49,17 +49,62 @@
 # x = 'From marquard@uct.ac.za'
 # print(x[14:17])
 
-fname = input('Enter a file name: ')
+# fname = input('Enter a file name: ')
 
-try:
-  fhand = open(fname)
-except:
-  print('Cannot open file', fname)
-  quit()
+# try:
+#   fhand = open(fname)
+# except:
+#   print('Cannot open file', fname)
+#   quit()
 
-count = 0
-for line in fhand:
-  if line.startswith('Subject:'):
-    count += 1
+# count = 0
+# for line in fhand:
+#   if line.startswith('Subject:'):
+#     count += 1
 
-print('There were', count, 'subject lines in', fname)
+# print('There were', count, 'subject lines in', fname)
+
+# friends = ['Joe', 'Glenn', 'Sally']
+
+# for friend in friends:
+#   print(friend)
+
+# for i in range(len(friends)):
+#   friend = friends[i]
+#   print(friend, i)
+
+# t = [9, 41, 12, 3, 74, 15]
+# print(t[:3])
+# print(t[3:])
+
+# stuff = list()
+
+# stuff.append('book')
+# stuff.append(99)
+# print(stuff)
+
+# while True:
+#   inp = input('Enter a #: ')
+#   if inp == 'done':
+#     break
+#   stuff.append(float(inp))
+
+# average = sum(stuff) / len(stuff)
+# print('Average:', average)
+
+# abc = 'With three words'
+# stuff = abc.split()
+# print(stuff)
+
+# for word in stuff:
+#   print(word)
+
+# Use the file name mbox-short.txt as the file name
+fh = open('mbox.txt')
+
+for line in fh:
+    if line.startswith("From") :
+      emailLines = line.split()
+      email = emailLines[1]
+      domain = email[email.find('@') + 1 : ]
+      print(domain) 

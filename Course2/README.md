@@ -43,3 +43,26 @@ Pythonic: A technique that works elegantly in Python. “Using try and except is
 Quality Assurance: A person or team focused on insuring the overall quality of a software product. QA is often involved in testing a product and identifying problems before the product is released.
 
 text file: A sequence of characters stored in permanent storage like a hard drive.
+
+### Chapter 8: Lists
+
+aliasing: A circumstance where two or more variables refer to the same object.
+
+delimiter: A character or string used to indicate where a string should be split.
+
+element: One of the values in a list (or other sequence); also called items.
+
+equivalent: Having the same value.
+
+index: An integer value that indicates an element in a list.
+identical Being the same object (which implies equivalence).
+
+list: A sequence of values.
+
+list traversal: The sequential accessing of each element in a list.
+
+nested list: A list that is an element of another list.
+
+object: Something a variable can refer to. An object has a type and a value.
+
+reference: The association between a variable and its value.
