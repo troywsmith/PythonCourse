@@ -99,12 +99,53 @@
 # for word in stuff:
 #   print(word)
 
-# Use the file name mbox-short.txt as the file name
-fh = open('mbox.txt')
+# fname = 'mbox-short.txt'
 
-for line in fh:
-    if line.startswith("From") :
-      emailLines = line.split()
-      email = emailLines[1]
-      domain = email[email.find('@') + 1 : ]
-      print(domain) 
+# fh = open(fname)
+
+# counts = dict()
+# emails = list()
+
+# count = 0
+# for line in fh:
+#     if line.startswith("From ") :
+#       emailLines = line.split()
+#       email = emailLines[1]
+#       emails.append(email)
+#       count += 1
+
+# for email in emails :
+#   counts[email] = counts.get(email, 0) + 1
+
+# print(counts)
+
+# counts = dict()
+# line = input('Enter a line of text:')
+
+# words = line.split()
+# print('Words:', words)
+
+# print('Counting...')
+# for word in words:
+#   counts[word] = counts.get(word, 0) + 1
+# print('Counts', counts)
+
+# print(counts.items())
+
+# fname = 'words.txt'
+# fhandle = open(fname)
+
+# counts = dict()
+# for line in fhandle:
+#   words = line.split()
+#   for word in words:
+#     counts[word] = counts.get(word, 0) + 1
+
+# bigcount = None
+# bigword = None
+# for word,count in counts.items():
+#   if bigcount is None or count > bigcount:
+#     bigword = word
+#     bigcount = count
+
+# print(bigword, bigcount)
