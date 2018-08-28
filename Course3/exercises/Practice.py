@@ -49,22 +49,78 @@
 # print(counts)
 
 
+# import urllib.request, urllib.parse, urllib.error
+# from bs4 import BeautifulSoup
+# import ssl
+
+# # Ignore SSL certificate errors
+# ctx = ssl.create_default_context()
+# ctx.check_hostname = False
+# ctx.verify_mode = ssl.CERT_NONE
+
+# url = input('Enter - ')
+# html = urllib.request.urlopen(url, context=ctx).read()
+
+# print(html)
+# # soup = BeautifulSoup(html, 'html.parser')
+
+# # # Retrieve all of the anchor tags
+# # tags = soup('a')
+# # for tag in tags:
+# #     print(tag.get('href', None))
+
+# import json
+# data = '''
+# {
+#   "name" : {
+#     "type" : "intl",
+#     "number" : "+1 516 603 0853"
+#   },
+#   "email" : {
+#     "hide" : "yes"
+#   }
+# }'''
+
+# info = json.loads(data)
+
+# print('Name: ', info["name"])
+
+
+
+
 import urllib.request, urllib.parse, urllib.error
-from bs4 import BeautifulSoup
-import ssl
+import json
 
-# Ignore SSL certificate errors
-ctx = ssl.create_default_context()
-ctx.check_hostname = False
-ctx.verify_mode = ssl.CERT_NONE
+# Note that Google is increasingly requiring keys
+# for this API
+serviceurl = 'http://maps.googleapis.com/maps/api/geocode/json?'
 
-url = input('Enter - ')
-html = urllib.request.urlopen(url, context=ctx).read()
+while True:
+    address = input('Enter location: ')
+    if len(address) < 1: break
 
-print(html)
-# soup = BeautifulSoup(html, 'html.parser')
+    url = serviceurl + urllib.parse.urlencode(
+        {'address': address})
 
-# # Retrieve all of the anchor tags
-# tags = soup('a')
-# for tag in tags:
-#     print(tag.get('href', None))
+    print('Retrieving', url)
+    uh = urllib.request.urlopen(url)
+    data = uh.read().decode()
+    print('Retrieved', len(data), 'characters')
+
+    try:
+        js = json.loads(data)
+    except:
+        js = None
+
+    if not js or 'status' not in js or js['status'] != 'OK':
+        print('==== Failure To Retrieve ====')
+        print(data)
+        continue
+
+    print(json.dumps(js, indent=4))
+
+    lat = js["results"][0]["geometry"]["location"]["lat"]
+    lng = js["results"][0]["geometry"]["location"]["lng"]
+    print('lat', lat, 'lng', lng)
+    location = js['results'][0]['formatted_address']
+    print(location)
