@@ -52,3 +52,5 @@ tuple: A single entry in a database table that is a set of attributes. More typi
 
 SQL injection: 
 
+### Chapter 16: Visualizing Data
+
