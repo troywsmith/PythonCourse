@@ -12,8 +12,8 @@
 
 ### Course 5: Capstone: Retrieving, Processing, and Visualizing Data with Python
 
-[Course 1]('./Certificates/Course_1.png')
-[Course 2]('./Certificates/Course_2.png')
-[Course 3]('./Certificates/Course_3.png')
-[Course 4]('./Certificates/Course_4.png')
-[Course 5]('./Certificates/Course_5.png')
+![Course 1]('./Certificates/Course_1.png')
+![Course 2]('./Certificates/Course_2.png')
+![Course 3]('./Certificates/Course_3.png')
+![Course 4]('./Certificates/Course_4.png')
+![Course 5]('./Certificates/Course_5.png')
